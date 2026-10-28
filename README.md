@@ -16,6 +16,12 @@ cmake -S . -B build-gex -G Ninja -DCMAKE_BUILD_TYPE=Release -DPSX_REWIND=OFF
 cmake --build build-gex --target psx-runtime --parallel 12
 ```
 
+## Controller support
+
+Player 1 defaults to the first connected game controller. Connect a controller
+before launching the game; controller button mappings can be edited in
+`input.ini` beside the executable. The PlayStation pad defaults to digital mode.
+
 The project config points to `isos/Gex - Enter the Gecko (USA).cue`, which
 references `Gex - Enter the Gecko (USA).bin` in the same directory. Disc files
 are local inputs and are not included in this repository.
